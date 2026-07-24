@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>External Marks</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #333333;
+      padding: 16px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    /* Top Navigation Header */
+    .nav-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      padding-top: 8px;
+    }
+
+    .back-arrow {
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .nav-header h1 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111;
+    }
+
+    /* Student Info Section */
+    .student-info {
+      margin-bottom: 20px;
+      font-size: 12px;
+    }
+
+    .info-group {
+      margin-bottom: 12px;
+    }
+
+    .info-label {
+      color: #777777;
+      font-size: 11px;
+      margin-bottom: 2px;
+    }
+
+    .info-value {
+      font-weight: 700;
+      color: #111111;
+      font-size: 13px;
+    }
+
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    /* Subject Card Styling */
+    .subject-card {
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+      border: 1px solid #e2e8f0;
+    }
+
+    .card-header {
+      background-color: #003B64;
+      color: #ffffff;
+      padding: 12px 14px;
+    }
+
+    .subject-title {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .subject-code {
+      font-size: 11px;
+      color: #b0cbdf;
+    }
+
+    /* Card Details Table */
+    .card-body {
+      display: flex;
+      background-color: #f8f9fa;
+      padding: 10px 0;
+    }
+
+    .col {
+      flex: 1;
+      text-align: center;
+      border-right: 1px solid #e9ecef;
+    }
+
+    .col:last-child {
+      border-right: none;
+    }
+
+    .col-label {
+      font-size: 11px;
+      color: #555555;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .col-value {
+      font-size: 12px;
+      font-weight: 700;
+      color: #222222;
+    }
+
+    .col-value.status-p {
+      color: #52c41a; /* Green status for Pass */
+    }
+
+    /* Bottom Summary Grid */
+    .summary-grid {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .summary-box {
+      flex: 1;
+      background-color: #f8f9fa;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 12px;
+    }
+
+    .summary-box-full {
+      background-color: #f8f9fa;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="nav-header">
+    <span class="back-arrow">&#8592;</span>
+    <h1>External marks</h1>
+  </div>
+
+  <!-- Student Info -->
+  <div class="student-info">
+    <div class="info-group">
+      <div class="info-label">HallTicket Number</div>
+      <div class="info-value">160924733180</div>
+    </div>
+    <div class="info-group">
+      <div class="info-label">Student Name</div>
+      <div class="info-value">MD TAUSIF KHAN</div>
+    </div>
+    <div class="info-row">
+      <div>
+        <div class="info-label">Degree</div>
+        <div class="info-value">B.E</div>
+      </div>
+      <div>
+        <div class="info-label">Program</div>
+        <div class="info-value">CSE</div>
+      </div>
+      <div>
+        <div class="info-label">Sem</div>
+        <div class="info-value">II-II</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subject 1 -->
+  <div class="subject-card">
+    <div class="card-header">
+      <div class="subject-title">Mathematics-III (Probability and Statistics)</div>
+      <div class="subject-code">U24MA401</div>
+    </div>
+    <div class="card-body">
+      <div class="col">
+        <div class="col-label">Credits</div>
+        <div class="col-value">3.00</div>
+      </div>
+      <div class="col">
+        <div class="col-label">Final grade</div>
+        <div class="col-value">C</div>
+      </div>
+      <div class="col">
+        <div class="col-label">Status</div>
+        <div class="col-value status-p">P</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subject 2 -->
+  <div class="subject-card">
+    <div class="card-header">
+      <div class="subject-title">Java Programming</div>
+      <div class="subject-code">U24IT402</div>
+    </div>
+    <div class="card-body">
+      <div class="col">
+        <div class="col-label">Credits</div>
+        <div class="col-value">3.00</div>
+      </div>
+      <div class="col">
+        <div class="col-label">Final grade</div>
+        <div class="col-value">C</div>
+      </div>
+      <div class="col">
+        <div class="col-label">Status</div>
+        <div class="col-value status-p">P</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subject 3 -->
+  <div class="subject-card">
+    <div class="card-header">
+      <div class="subject-title">Design and Analysis of Algorithms</div>
+      <div class="subject-code">U24CS401</div>
+    </div>
+    <div class="card-body">
+      <div class="col">
+        <div class="col-label">Credits</div>
+        <div class="col-value">3.00</div>
+      </div>
+      <div class="col">
+        <div class="col-label">Final grade</div>
+        <div class="col-value">A</div>
+      </div>
+      <div class="col">
+        <div class="col-label">Status</div>
+        <div class="col-value status-p">P</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subject 4 -->
+  <div class="subject-card">
+    <div class="card-header">
+      <div class="subject-title">Automata Theory, Languages and Computation</div>
+      <div class="subject-code">U24IT403</div>
+    </div>
+    <div class="card-body">
+      <div class="col">
+        <div class="col-label">Credits</div>
+        <div class="col-value">-</div>
+      </div>
+      <div class="col">
+        <div class="col-label">Final grade</div>
+        <div class="col-value">-</div>
+      </div>
+      <div class="col">
+        <div class="col-label">Status</div>
+        <div class="col-value status-p">F</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subject 5 -->
+  <div class="subject-card">
+    <div class="card-header">
+      <div class="subject-title">Digital Electronics and Computer Organization</div>
+      <div class="subject-code">U24EC405</div>
+    </div>
+    <div class="card-body">
+      <div class="col">
+        <div class="col-label">Credits</div>
+        <div class="col-value">3.00</div>
+      </div>
+      <div class="col">
+        <div class="col-label">Final grade</div>
+        <div class="col-value">B</div>
+      </div>
+      <div class="col">
+        <div class="col-label">Status</div>
+        <div class="col-value status-p">P</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subject 6 -->
+  <div class="subject-card">
+    <div class="card-header">
+      <div class="subject-title">English For Technical Communication</div>
+      <div class="subject-code">U24EN401</div>
+    </div>
+    <div class="card-body">
+      <div class="col">
+        <div class="col-label">Credits</div>
+        <div class="col-value">2.00</div>
+      </div>
+      <div class="col">
+        <div class="col-label">Final grade</div>
+        <div class="col-value">C</div>
+      </div>
+      <div class="col">
+        <div class="col-label">Status</div>
+        <div class="col-value status-p">P</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subject 7 -->
+  <div class="subject-card">
+    <div class="card-header">
+      <div class="subject-title">Design and Analysis of Algorithms Lab</div>
+      <div class="subject-code">U24IT4L2</div>
+    </div>
+    <div class="card-body">
+      <div class="col">
+        <div class="col-label">Credits</div>
+        <div class="col-value">1.50</div>
+      </div>
+      <div class="col">
+        <div class="col-label">Final grade</div>
+        <div class="col-value">A</div>
+      </div>
+      <div class="col">
+        <div class="col-label">Status</div>
+        <div class="col-value status-p">P</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subject 8 -->
+  <div class="subject-card">
+    <div class="card-header">
+      <div class="subject-title">Soft Skills & Employability Skills Lab</div>
+      <div class="subject-code">U24EN4L1</div>
+    </div>
+    <div class="card-body">
+      <div class="col">
+        <div class="col-label">Credits</div>
+        <div class="col-value">1.50</div>
+      </div>
+      <div class="col">
+        <div class="col-label">Final grade</div>
+        <div class="col-value">B</div>
+      </div>
+      <div class="col">
+        <div class="col-label">Status</div>
+        <div class="col-value status-p">P</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Summary Section -->
+  <div class="summary-grid">
+    <div class="summary-box">
+      <div class="col-label">SGPA</div>
+      <div class="col-value">-</div>
+    </div>
+    <div class="summary-box">
+      <div class="col-label">CGPA</div>
+      <div class="col-value">-</div>
+    </div>
+  </div>
+
+  <div class="summary-box-full">
+    <div class="col-label">Total Credits</div>
+    <div class="col-value">-</div>
+  </div>
+
+</body>
+</html>
+
